@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM Technology - Insurance Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <img class="logo-img" src="/images/logo.png" alt="">
+        <ul id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about us">About us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#" class="nav-btn" onclick="openBooking(); return false;">Book Now</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-inner">
+            <div class="hero-text reveal">
+                <h1>Your <span>High-Moving</span><br>Insurance Solution</h1>
+                <p>We provide comprehensive moving insurance solutions that protect your valuables during transit. Trust
+                    us to handle your move with the care it deserves — from your front door to your new home.</p>
+                <a href="#" class="btn-primary" onclick="openBooking(); return false;">Book Now</a>
+            </div>
+            <div class="hero-image reveal" style="transition-delay:0.2s">
+                <img class="hero-img" src="/images/hero.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="stats-bar">
+        <div class="stats-inner">
+            <div class="stat-item">
+                <div class="num">15+</div>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="num">10K+</div>
+                <p>Successful Moves</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="num">99%</div>
+                <p>Client Satisfaction</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="num">50+</div>
+                <p>Cities Covered</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="why-section" id="about">
+        <div class="section-inner">
+            <div class="section-title">Why <span>Partner</span> With Us?</div>
+            <div class="section-desc">We bring together expertise, reliability, and top-tier insurance coverage to make
+                your move stress-free.</div>
+            <div class="why-grid">
+                <img class="partner-img" src="/images/partner.png" alt="">
+                <div class="why-list reveal" style="transition-delay:0.15s">
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Full Coverage Insurance</h4>
+                            <p>Comprehensive insurance plans that cover all your belongings during transit, ensuring
+                                maximum protection.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Real-Time Tracking</h4>
+                            <p>Track your belongings in real-time with our advanced GPS tracking system throughout the
+                                entire journey.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Certified Professionals</h4>
+                            <p>Our team consists of highly trained and certified moving professionals with years of
+                                experience.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>24/7 Customer Support</h4>
+                            <p>Round-the-clock support to address all your concerns and queries at any time of day or
+                                night.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <a href="#" class="btn-primary" onclick="openBooking(); return false;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="section-inner">
+            <div class="section-title">Discover  <span>How Our Affiliate</span></div>
+            <div class="section-title">Program Works</div>
+            <div class="section-desc">From local moves to international relocations, we offer a range of specialized
+                services to meet every need.</div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-img">
+                            <img src="/images/work.png" alt="">
+                    </div>
+                    <div class="service-body">
+                        <h3>Residential Moving</h3>
+                        <p>Safe and efficient home relocation services with full insurance coverage for all your
+                            household items.</p>
+                        <button class="btn-teal-sm" onclick="openBooking()">Book Now</button>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay:0.1s">
+                    <div class="service-img">
+                            <img src="/images/work-2.png" alt="">
+                    </div>
+                    <div class="service-body">
+                        <h3>Commercial Moving</h3>
+                        <p>Minimize downtime with our professional office and commercial relocation services.</p>
+                        <button class="btn-teal-sm" onclick="openBooking()">Book Now</button>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay:0.2s">
+                    <div class="service-img">
+                            <img src="/images/work-3.png" alt="">
+                    </div>
+                    <div class="service-body">
+                        <h3>Packing Services</h3>
+                        <p>Professional packing and unpacking with high-quality materials to ensure your items arrive
+                            safely.</p>
+                        <button class="btn-teal-sm" onclick="openBooking()">Book Now</button>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-img">
+                            <img src="/images/work-4.png" alt="">
+                    </div>
+                    <div class="service-body">
+                        <h3>Long Distance Moving</h3>
+                        <p>Cross-country moves handled with precision, care, and complete insurance coverage throughout.
+                        </p>
+                        <button class="btn-teal-sm" onclick="openBooking()">Book Now</button>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay:0.1s">
+                    <div class="service-img">
+                            <img src="/images/work-5.png" alt="">
+                    </div>
+                    <div class="service-body">
+                        <h3>International Moving</h3>
+                        <p>Global relocation experts handling customs, documentation,
+                            worldwide.</p>
+                        <button class="btn-teal-sm" onclick="openBooking()">Book Now</button>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay:0.2s">
+                    <div class="service-img">
+                            <img src="/images/work-6.png" alt="">
+                    </div>
+                    <div class="service-body">
+                        <h3>Storage Solutions</h3>
+                        <p>Secure, climate-controlled storage facilities available short or long term for all your
+                            needs.</p>
+                        <button class="btn-teal-sm" onclick="openBooking()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner-section">
+        <div class="section-inner" style="text-align:center">
+            <div class="section-label" style="color:rgba(255,255,255,0.8)">Get Started</div>
+            <h2>Ready to Make Your Move?</h2>
+            <p>Join thousands of satisfied customers who trusted MoveSafe with their most valuable possessions. Book
+                your appointment today and let us handle the rest.</p>
+            <button class="btn-primary" onclick="openBooking()"
+                style="background:#fff;color:var(--teal);box-shadow:0 4px 20px rgba(0,0,0,0.2);">Book Now — It's
+                Free!</button>
+        </div>
+    </div>
+
+    <section class="partnering-section">
+        <div class="section-inner">
+            <div class="partner-grid">
+                <div class="partner-text reveal">
+                    <div class="section-title">Partnering With us, Is <span>The Right Choice</span></div>
+                    <div class="partner-features">
+                        <div class="partner-feature">Licensed & Fully Insured Company</div>
+                        <div class="partner-feature">Transparent Pricing — No Hidden Fees</div>
+                        <div class="partner-feature">Experienced & Background-Checked Team</div>
+                        <div class="partner-feature">On-Time Delivery Guarantee</div>
+                        <div class="partner-feature">Eco-Friendly Packing Materials</div>
+                        <div class="partner-feature">Flexible Scheduling 7 Days a Week</div>
+                    </div>
+                    <button class="btn-primary" onclick="openBooking()">Book Now</button>
+                </div>
+                <div class="partner-image reveal" style="transition-delay:0.15s">
+                        <img src="/images/partnering.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery-section">
+        <div class="section-inner">
+            <div class="section-title">Our <span>Work</span> Delivery</div>
+            <div class="delivery-grid">
+                <div class="delivery-card reveal">
+                     <img src="/images/delivery-1.png" alt="">
+                    <div class="delivery-overlay">
+                        <h4>Residential Project — NYC</h4>
+                    </div>
+                </div>
+                <div class="delivery-card reveal" style="transition-delay:0.1s">
+                     <img src="/images/delivery-2.png" alt="">
+                    <div class="delivery-overlay">
+                        <h4>Office Relocation — Chicago</h4>
+                    </div>
+                </div>
+                <div class="delivery-card reveal" style="transition-delay:0.2s">
+                     <img src="/images/delivery-3.png" alt="">
+                    <div class="delivery-overlay">
+                        <h4>International Move — London</h4>
+                    </div>
+                </div>
+                <div class="delivery-card reveal" style="transition-delay:0.3s">
+                     <img src="/images/delivery-4.png" alt="">
+                    <div class="delivery-overlay">
+                        <h4>Storage Solution — LA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="section-inner">
+            <div class="section-title">What Our <span>Clients</span> Say About Us</div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>"MoveSafe made our cross-country move completely stress-free. Every item arrived in perfect
+                        condition and their insurance coverage gave us total peace of mind."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">JD</div>
+                        <div class="reviewer-info">
+                            <h5>James Davidson</h5>
+                            <span>Residential Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay:0.1s">
+                    <div class="stars">★★★★★</div>
+                    <p>"We relocated our entire office in just two days with zero disruption to our business. The team
+                        was professional, fast, and incredibly careful."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">SM</div>
+                        <div class="reviewer-info">
+                            <h5>Sarah Mitchell</h5>
+                            <span>Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay:0.2s">
+                    <div class="stars">★★★★★</div>
+                    <p>"Moved internationally and was nervous about the process. MoveSafe handled everything — customs,
+                        packing, delivery — flawlessly. Highly recommend!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">RK</div>
+                        <div class="reviewer-info">
+                            <h5>Ravi Kumar</h5>
+                            <span>International Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="section-inner">
+            <div class="faq-layout">
+                <div>
+                    <div class="section-title">Frequently Asked <span>Questions</span></div>
+                    <div class="section-desc" style="margin-bottom:30px">Find answers to the most common questions about
+                        our moving and insurance services.</div>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                What does your moving insurance cover?
+                                <span class="faq-arrow">▾</span>
+                            </button>
+                            <div class="faq-answer">Our comprehensive insurance covers all personal and household items
+                                during transit including furniture, electronics, artwork, and fragile items. We offer
+                                full replacement value coverage for all plans.</div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                How far in advance should I book?
+                                <span class="faq-arrow">▾</span>
+                            </button>
+                            <div class="faq-answer">We recommend booking at least 2–4 weeks in advance for local moves
+                                and 6–8 weeks for long-distance or international moves, especially during peak seasons
+                                (May–September).</div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                Do you offer packing services?
+                                <span class="faq-arrow">▾</span>
+                            </button>
+                            <div class="faq-answer">Yes! We offer full packing and unpacking services using
+                                eco-friendly, high-quality packing materials. Our professional packers ensure everything
+                                is secured safely for transport.</div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                What areas do you service?
+                                <span class="faq-arrow">▾</span>
+                            </button>
+                            <div class="faq-answer">We operate in 50+ cities across the US and offer international
+                                moving services to over 40 countries worldwide. Contact us for a full list of service
+                                areas.</div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" onclick="toggleFAQ(this)">
+                                How is pricing determined?
+                                <span class="faq-arrow">▾</span>
+                            </button>
+                            <div class="faq-answer">Pricing depends on the volume and weight of items, distance of the
+                                move, and additional services selected. We provide free, no-obligation quotes with
+                                transparent, all-inclusive pricing.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-form-side reveal" style="transition-delay:0.15s">
+                    <h3>Get a Free Quote Today</h3>
+                    <p>Ready to start your move? Fill out the form below and our team will reach out within 24 hours
+                        with a personalized quote.</p>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Moving From (City, State)">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Moving To (City, State)">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Additional details about your move..."></textarea>
+                    </div>
+                    <button class="btn-primary" onclick="openBooking()"
+                        style="width:100%;justify-content:center;display:block;text-align:center;">Book Now — Schedule a
+                        Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                     <img class="logo-img" src="/images/logo.png" alt="">
+                    <p>Your trusted partner for safe, insured moving solutions. We've helped thousands of families and
+                        businesses relocate with confidence since 2009.</p>
+                    <div class="social-links">
+                        <a class="social-link" href="#">f</a>
+                        <a class="social-link" href="#">in</a>
+                        <a class="social-link" href="#">tw</a>
+                        <a class="social-link" href="#">yt</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Residential Moving</a></li>
+                        <li><a href="#">Commercial Moving</a></li>
+                        <li><a href="#">Packing Services</a></li>
+                        <li><a href="#">Long Distance</a></li>
+                        <li><a href="#">International</a></li>
+                        <li><a href="#">Storage Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press & Media</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">📞 +1 (800) 555-MOVE</a></li>
+                        <li><a href="#">✉ info@movesafe.com</a></li>
+                        <li><a href="#">📍 123 Move St, NYC 10001</a></li>
+                        <li><a href="#">🕐 Mon–Sat: 7AM – 8PM</a></li>
+                    </ul>
+                    <div style="margin-top:20px">
+                        <button class="btn-primary" onclick="openBooking()"
+                            style="width:100%;text-align:center;font-size:13px;padding:12px 20px;">📅 Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 MoveSafe Insurance Solutions. All rights reserved.</span>
+                <span>Privacy Policy · Terms of Service · Cookie Policy</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="bookingModal" onclick="handleModalClick(event)">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>📅 Schedule Your Free Consultation</h2>
+                <button class="modal-close" onclick="closeBooking()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="calendly-inline-widget"
+                    data-url="https://calendly.com/your-username/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=1abcb0"
+                    style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                    async></script>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
